@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    margin-left:20vh;
+    min-height: 100vh;
+    background-color: #ffffff; /* Cor de fundo da página */
+}
+
+/* Estilo da Barra Lateral */
+.barra-lateral {
+    width: 250px; /* Largura da barra lateral */
+    background-color: #e9e7e7; /* Cor de fundo da barra lateral */
+    display: flex;
+    flex-direction: column; /* Itens empilhados verticalmente */
+    align-items: center; /* Centraliza itens horizontalmente */
+    padding: 20px 0; /* Espaçamento vertical */
+    border-radius: 50px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(163, 5, 206, 0.623); /* Sombra da barra lateral */
+}
+/* Estilo dos Itens do Menu */
+.item-menu {
+    width: 100%; /* Largura total do item do menu */
+    padding: 50px 0; /* Espaçamento interno */
+    display: flex;
+    align-items: center; /* Centraliza itens verticalmente */
+    justify-content: center; /* Centraliza itens horizontalmente */
+    flex-direction: column; /* Itens empilhados verticalmente */
+    color: #070707; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor pointer para indicar interatividade */
+    transition: background 0.3s; /* Transição suave para o fundo */
+}
+.item-menu img {
+    width: 30px; /* Largura do ícone */
+    height: 24px; /* Altura do ícone */
+    margin-bottom: 10px; /* Espaçamento abaixo do ícone */
+}
+
+.item-menu.ativo {
+    background-color: #cecece; /* Cor de fundo do item ativo */
+    border-radius: 8px; /* Bordas arredondadas para o item ativo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para o item ativo */
+}
+
+.item-menu:hover {
+    background-color: #7123cae3; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo da Seção das Missões */
+.secao-missoes {
+    flex: 1; /* Ocupar espaço restante */
+    padding: 40px; /* Espaçamento interno */
+    font-family: 'Roboto', sans-serif; /* Adicionando fallback para a fonte */
+}
+
+/* Estilo dos Títulos das Missões */
+h1 {
+    font-size: 50px; /* Tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo das Missões Diárias */
+.missao-diaria {
+    margin-bottom: 50px; /* Espaçamento abaixo das missões diárias */
+}
+
+/* Estilo de Cada Missão */
+.missao {
+    display: flex; /* Disposição flexível para ícone e texto */
+    align-items: center; /* Centraliza itens verticalmente */
+    margin-bottom: 20px; /* Espaçamento abaixo de cada missão */
+    background-color: #dedbdb; /* Cor de fundo da missão */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 30px; /* Bordas arredondadas */
+}
+
+/* Estilo do Ícone da Missão */
+.icone {
+    font-size: 50px; /* Tamanho do ícone */
+}
+
+/* Estilo da Informação da Missão */
+.missao-info {
+    flex: 1; /* Ocupar espaço restante */
+    margin-left: 30px; /* Espaço entre o ícone e o texto */
+}
+
+/* Estilo do Nome da Atividade */
+.missao-info span {
+    display: block; /* Faz o texto ocupar uma linha inteira */
+    font-size: 30px; /* Tamanho da fonte do nome da atividade */
+    font-weight: 400; /* Peso da fonte */
+    margin-bottom: 10px; /* Espaço entre o nome da atividade e a barra de progresso */
+}
+
+/* Estilo da Barra de Progresso */
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px; /* Aumenta a altura da barra */
+    background-color: #e0e0e0;
+    border-radius: 15px; 
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #11eb18;
+    border-radius: 15px 0 0 15px;
+}
+
+/* Estilo das Missões Semanais */
+.missao-semanal {
+    margin-bottom: 50px; /* Espaçamento abaixo de cada seção semanal */
+}
+
+.missao-semanal h2 {
+    font-size: 25px; /* Tamanho do título da semana */
+    margin-bottom: 50px; /* Espaçamento abaixo do título da semana */
+}
+/* Estilo para os dropdowns */
+.dropdown {
+    margin-bottom: 20px; /* Espaçamento entre os dropdowns */
+}
+
+.seta {
+    width: 20px; /* Tamanho da seta */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-left: 10px; /* Espaçamento entre o título e a seta */
+}
+.dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.seta {
+    width: 20px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Espaço entre a seta e o título */
+}
+.titulo-dropdown {
+    font-size: 24px; /* Tamanho do texto do título */
+    font-weight: 500; /* Peso da fonte */
+}

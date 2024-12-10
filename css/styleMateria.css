@@ -1,0 +1,255 @@
+#dark-mode {
+  display: none;
+}
+
+label[for="dark-mode"] {
+  cursor: pointer;
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: fixed; 
+  top: 20px; 
+  right: 20px; 
+  transition: background-color 0.3s;
+  display: inline-block;
+  z-index: 1000; /
+}
+
+label[for="dark-mode"]::before {
+  content: "";
+  width: 21px;
+  height: 21px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+#dark-mode:checked + label[for="dark-mode"] {
+  background-color: #333;
+}
+
+#dark-mode:checked + label[for="dark-mode"]::before {
+  transform: translateX(25px);
+}
+
+/* Tema claro*/
+body {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema escuro */
+body.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+/*mudar o fundo de outros elementos */
+body.dark-mode .background {
+  background-color: #333;
+}
+
+body.dark-mode .sidebar {
+  background-color: #444;
+}
+
+body.dark-mode .nav-links {
+  background-color: #555;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    display: flex; /* Usando Flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Para alinhar os itens na vertical */
+    margin-left: 300px;
+}
+
+
+header h2 {
+    font-size: px;
+    margin-bottom: 20px;
+}
+
+header h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.subjects {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.e-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(3, 234, 255, 0.5);
+
+}
+
+ .progress {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.e-card {
+   
+    background: transparent;
+    box-shadow: 0px 8px 28px -9px rgba(0,0,0,0.45);
+    position: relative;
+    width: 250px;
+    height: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    
+  }
+  
+  .blue {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg,#2405ab,#140195 60%,#0464ff);
+  }
+
+  .pink {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg,#4a005d,#b401ae 60%,#ff00ff);
+  }
+
+  .verde {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg,#0c5800,#01b42b 60%,#35ff02);
+  }
+
+  .roxo {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg,#360055,#7e01b4 60%,#d902ff);
+  }
+
+  .amarelo {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg,#c0b627,#6c6c00 60%,#e4f501);
+  }
+
+  .laranja {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(744deg,#ff4000,#fa7000 60%,#f57b01);
+  }
+  
+  .infotop {
+
+    font-size: 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 20px;
+    justify-content: absolute;
+  }
+
+  .infotop .separacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex;
+    align-items: center;
+    padding: 110px;
+  }
+  
+
+  .wave:nth-child(2),
+  .wave:nth-child(3) {
+    top: 210px;
+  }
+  
+  .playing .wave  {
+    border-radius: 40%;
+    animation: wave 3000ms infinite linear;
+  }
+  
+  .wave {
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+  }
+  
+  .playing .wave:nth-child(2) {
+    animation-duration: 4000ms;
+  }
+  
+  .wave:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .playing .wave:nth-child(3) {
+    animation-duration: 5000ms;
+  }
+  
+  .wave:nth-child(3) {
+    animation-duration: 45s;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }  

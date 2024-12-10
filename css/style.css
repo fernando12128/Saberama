@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+#nav_bar{
+    height: 500px;
+    width: 100%;
+    background-color: #6F00FF;
+    color: white;
+
+}
+
+ul{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+}
+
+li{
+    padding-top: 15px;
+    padding-left: 20px;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+}
+
+#dialogo_um{
+    position: absolute;
+    height: 200px;
+    width: 550px;
+    margin-top: 25px;
+    background-color: white;
+    border-radius: 30px;
+    margin-left: 350px;
+    border-bottom-left-radius: 0;
+    top: 200px;
+}
+
+#dialogo_um p{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 23px;
+}
+
+#livro_cap{
+    margin-top: 5%;
+}
+
+.div-livro-cap{
+    padding-top: 15%;
+}
+
+#container{
+    display: flex;
+    justify-content: end;
+    height: 400px;
+    
+}
+#sobre_nos{
+   text-align: justify;
+   margin-right: 90px;
+   margin-top: 80px;
+   color: rgba(0, 0, 0, 0.712);
+   line-height: 30px;
+   font-size: 15px;
+   
+}
+.sobre{
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: -70px;
+    color: rgba(0, 0, 0, 0.568);
+}
+#S_nos{
+    color: #6F00FF;
+}
+#cont{
+    width: 100%;
+    height: 200px;
+    background-color: #F82586;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-matematica{
+ color: #FF3F00;
+}
+
+.p-portugues{
+ color: #41A650;
+}
+
+.p-geografia{
+ color: #6F00FF;
+}
+
+.nossas-materias{
+    font-size: 30px;
+    padding-left: 20px;
+    color: #4A0081;
+}
+
+.cont_materias{
+    margin-left: 60px;
+    height: 160px;
+    width: 350px;
+    border-radius: 15px;
+    background-color: white;
+    transition: all 1s;   
+}
+
+.cont_materias p{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 30px;
+}
+
+#section_game{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+}
+.exemplo_game{
+    position: relative;
+    height: 500px;
+    width: 350px;
+    margin-left: 120px;
+    border-radius: 15px;
+    background-color: rgb(163, 163, 163);
+}
+
+.imagem-fundo{
+    width: 100%;
+    height: 100%;
+}
+
+
+#game_img{
+    position: absolute;
+    height: 250px;
+    margin-left: 360px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+#talk_game{
+    height: 150px;
+    width: 300px;
+    border: solid 1px;
+    margin-left: 120px;
+    margin-top: -250px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+}
+
+.roda-pe {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-top: 3px solid black;
+    text-align: center;
+  }
+  
+  .roda-pe table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    color: #6F00FF;
+    font-size: 16px;
+  }
+  
+  .roda-pe th {
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #fafafa;
+    text-align: left;
+  }
+  
+  .roda-pe td {
+    padding: 10px;
+    border-bottom: 1px solid #fafafa;
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .roda-pe table {
+      width: 100%;
+    }
+  
+    .roda-pe th, .roda-pe td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+.conteudo-rodape{
+    padding-left: 60px;
+    padding-top: 50px;
+}
+
+pre{
+    font-size: 20px;
+}
+
+.divisao {
+    border-bottom: solid 0.5px black;
+    width: 100%;
+    height: 10px;
+    padding-bottom: 50px;
+}
+
+.editar-botao{
+    background-color: #6591CB;
+    width: 12%;
+    height: 15%;
+    border-radius: 10%;
+    color: white;
+}
+
+
+.incones-home{
+    padding: 20px;
+}
+
+.logo-home{
+    padding-left: 50%;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redefinir senha</title>
+  <link rel="stylesheet" href="altSenha.css">
+</head>
+
+<body>
+  <div class="animated-background"></div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Redefinir senha</h2>
+      <form id="senha-form">
+
+        <label for="nova-senha">Nova senha:</label>
+
+        <div class="input-wrapper">
+          <input type="password" id="nova-senha" placeholder="Digite sua nova senha" required>
+          <button type="button" class="toggle-visibility" data-target="nova-senha">
+            <img src="img/ocultar.png" alt="Ocultar senha" class="eye-icon" id="eye-nova">
+          </button>
+        </div>
+        
+        <label for="confirmar-senha">Confirmar senha:</label>
+        
+        <div class="input-wrapper">
+          <input type="password" id="confirmar-senha" placeholder="Confirme sua nova senha" required>
+          <button type="button" class="toggle-visibility" data-target="confirmar-senha">
+            <img src="img/ocultar.png" alt="Ocultar senha" class="eye-icon" id="eye-confirmar">
+          </button>
+        </div>
+        
+        <ul class="requirements">
+          <li id="length"><span class="icon">❌</span> No mínimo 5 caracteres.</li>
+          <li id="uppercase"><span class="icon">❌</span> Pelo menos uma letra maiúscula ou minúscula.</li>
+          <li id="number"><span class="icon">❌</span> Pelo menos um número.</li>
+          <li id="special"><span class="icon">❌</span> Pelo menos um caractere especial (ex.: @, #, $).</li>
+          <li id="match"><span class="icon">❌</span> Senhas devem coincidir.</li>
+        </ul>
+        
+        <button type="submit" class="botao">Confirmar</button>
+
+        <img class="Capivara" src="Img/Capivara.png" alt="Capivara">
+      </form>
+    </div>
+  </div>
+
+
+  <script src="altSenha.js"></script>
+</body>
+</html>

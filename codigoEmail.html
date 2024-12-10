@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperação de senha</title>
+    <link rel="stylesheet" href="codigoEmail.css">
+</head>
+<body>
+    <div class="animated-background"></div>
+    <div class="card">
+        <div class="form-card">
+
+            <h2>Insira o código de segurança</h2>
+            
+            <form>
+                <div class="input-group">
+                    <input type="text" id="codigo1" name="codigo1" maxlength="1" class="codigo-input" inputmode="numeric" pattern="[0-9]" required>
+                    <input type="text" id="codigo2" name="codigo2" maxlength="1" class="codigo-input" inputmode="numeric" pattern="[0-9]" required>
+                    <input type="text" id="codigo3" name="codigo3" maxlength="1" class="codigo-input" inputmode="numeric" pattern="[0-9]" required>
+                    <input type="text" id="codigo4" name="codigo4" maxlength="1" class="codigo-input" inputmode="numeric" pattern="[0-9]" required>
+                </div>
+                <button type="submit" class="botao">Avançar</button>
+            </form>
+
+            <a href="#" class="reenviar">Não chegou? Enviar novamente.</a>
+
+        </div>
+    </div>
+
+    <script src="codigoEmail.js"></script>
+</body>
+</html>

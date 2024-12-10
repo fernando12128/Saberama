@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano Super</title>
+    <link rel="stylesheet" href="css/pagCartao.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h1>PLANO SUPER</h1>
+            <div class="benefits">
+                <div class="benefit">Atividades personalizadas</div>
+                <div class="benefit">Vidas ilimitadas</div>
+                <div class="benefit">Feedbacks</div>
+                <div class="benefit">BENEFÍCIO</div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <section class="add-card page">
+                <form class="form">
+                    <!-- Nome Completo -->
+                    <label for="name" class="label">
+                        <span class="title">Nome completo do titular do cartão</span>
+                        <input class="input-field" type="text" id="name" name="input-name" 
+                               title="Input title" placeholder="Digite seu nome completo" 
+                               maxlength="50" required>
+                    </label>
+
+                    <!-- Número do Cartão -->
+                    <label for="serialCardNumber" class="label">
+                        <span class="title">Número do cartão</span>
+                        <input id="serialCardNumber" class="input-field" type="text" 
+                               name="input-name" title="Input title" 
+                               placeholder="0000 0000 0000 0000" maxlength="19" 
+                               pattern="[0-9\s]+" required>
+                    </label>
+
+                    <div class="split">
+                        <!-- Data de Vencimento -->
+                        <label for="ExDate" class="label">
+                            <span class="title">Vencimento</span>
+                            <input id="ExDate" class="input-field" type="text" 
+                                   name="input-name" title="Expiry Date" 
+                                   placeholder="MM/AA" maxlength="5" 
+                                   pattern="\d{2}/\d{2}" required>
+                        </label>
+
+                        <!-- CVV -->
+                        <label for="cvv" class="label">
+                            <span class="title">CVV</span>
+                            <input id="cvv" class="input-field" type="text" 
+                                   name="cvv" title="CVV" placeholder="CVV" 
+                                   maxlength="4" pattern="\d{3,4}" required>
+                        </label>
+                    </div>
+
+                    <!-- Finalizar -->
+                    <label>
+                        <input type="checkbox" required="">
+                        <span>Aceitar termos</span>
+                    </label>
+                    <input class="checkout-btn" type="button" value="Finalizar" />
+
+                </form>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#elemento{
+    background-color: #7106B6;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    height: 100vh;
+    
+}
+.sub-elemento{
+    padding: 25px;
+    transition: all 0.5s;
+    list-style: none;
+}
+.sub-elemento:hover{
+    background-color: white;
+    color: #7106B6;
+    cursor: pointer;
+}
+.Logo-navbar{
+    width:120px;
+    margin-bottom: 60px;
+    margin-bottom: -5px;
+}
+#btn{
+    cursor: pointer;
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+}

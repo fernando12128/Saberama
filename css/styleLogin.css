@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    display: flex;
+    font-family: "Poppins", serif;
+    margin: 0;
+    overflow: hidden;
+    
+}
+#container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    padding-top: 50px;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: italic;
+}
+#cadastro{
+    height: 100vh;
+    width: 70%;
+    text-align: center;
+    color: #7106B6;
+    flex-direction: column;
+    
+
+}
+#login{
+    height: 100vh;
+    width: 35%;
+    background-color: #7106B6;
+    
+    border-radius: 50%;
+    margin: -25% -10% -25% -25%;
+    padding: 25% 10% 25% 25%;
+    position: relative;
+
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    transition: all 1s;
+
+    z-index: 3;
+
+}
+#login:hover{
+    height: 100vh;
+    width: 60%;
+    background-color: #7106B6;
+
+    margin: -25% -10% -25% -25%;
+    padding: 25% 10% 25% 25%;
+    position: relative;
+
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    transition: all 1s;
+
+}
+#divisoria{
+    border-radius: 50%;
+    margin: -25% -10% -25% -25%;
+    padding: 25% 10% 25% 25%;
+    position: relative;
+
+    height: 100vh;
+    width: 30px;
+    background-color: #7006b6cb;
+
+    z-index: 2;
+}
+#divisoria02{
+    border-radius: 50%;
+    margin: -25% -10% -25% -25%;
+    padding: 25% 10% 25% 25%;
+    position: relative;
+
+    height: 100vh;
+    width: 20px;
+    background-color: #7006b6a4;
+
+    z-index: 1;
+}
+
+
+#login_div{
+    margin-top: 150px;
+}
+
+#cadastro_div{
+    margin-top: 90px;
+}
+
+#input_email{
+    padding-left: 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    border-style: none;
+}
+
+#cadastro_div input{
+    color: white;
+    padding-left: 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: #7106B6;
+    margin-bottom: 30px;  
+}
+
+#input_senha{
+    padding-left: 20px;
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    border-style: none;
+    
+    
+}:placeholder-shown{
+    padding-left: 20px;
+    color: purple;
+}
+
+
+#cadastro_div input::placeholder {
+    color: white
+}
+
+#button_login{
+    height: 60px;
+    width: 240px;
+    margin-top: 20px;
+    background-color: white;
+    color: #7106B6;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 36px;
+    font-weight: 700;
+}
+#button_cadastro{
+    height: 60px;
+    width: 240px;
+    margin-top: 20px;
+    background-color: #7106B6;
+    color: white;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 700;
+}
+#img_login{
+    position: absolute;
+    width: 420px;
+    margin-left: -50px;
+    margin-top: -70px;
+}
